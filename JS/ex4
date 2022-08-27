@@ -1,0 +1,15 @@
+function luidyMoura(num) {
+    let arr = [];
+    for(let i = 1; i <= num; i++) {
+        if(i % 5 == 0 && i % 9 == 0) {
+            arr.push('LuidyMoura');
+        } else if(i % 5 == 0) {
+            arr.push('Luidy');
+        } else if(i % 9 == 0) {
+            arr.push('Moura');
+        } else {
+            arr.push(i);
+        }
+    }
+    return arr;
+}
